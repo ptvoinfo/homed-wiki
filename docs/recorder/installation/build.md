@@ -20,7 +20,7 @@ git clone https://github.com/u236/homed-service-common.git \
 ```
 
 ```sh
-git clone https://github.com/u236/homed-serivce-recorder.git \
+git clone https://github.com/u236/homed-service-recorder.git \
   homed/homed-recorder
 ```
 
