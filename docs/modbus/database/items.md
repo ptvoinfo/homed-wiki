@@ -94,7 +94,7 @@ title: 'Modbus: Карта регистров'
 
 - `bool`
 - `value`
-- `emum`
+- `enum`
 
 ### `read`
 
