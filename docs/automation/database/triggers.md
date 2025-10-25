@@ -22,6 +22,12 @@ title: 'Automation: Триггеры'
   },
   {
     "type": "property",
+    "endpoint": "zigbee/hallSwitch/3",
+    "property": "status",
+    "differs": "off"
+  },
+  {
+    "type": "property",
     "endpoint": "zigbee/kitchenHumidity",
     "property": "humidity",
     "above": 60
@@ -63,7 +69,7 @@ title: 'Automation: Триггеры'
 
 !!! warning ""
 
-    Поля `equals`, `above`, `below`, `between`, `outside`, `changes` и `updates` не могут использоваться в одном триггере одновременно.
+    Поля `equals`, `differs`, `above`, `below`, `between`, `outside`, `changes` и `updates` не могут использоваться в одном триггере одновременно.
 
 ### `endpoint`
 
@@ -80,6 +86,10 @@ title: 'Automation: Триггеры'
 ### `equals`
 
 Триггер сработает, если значение свойства станет равным значению этого поля.
+
+### `differs`
+
+Триггер сработает, если значение свойства перестанет быть равным значению этого поля.
 
 ### `above`
 
@@ -126,6 +136,11 @@ title: 'Automation: Триггеры'
   },
   {
     "type": "mqtt",
+    "topic": "my/other/sensor",
+    "differs": false
+  },
+  {
+    "type": "mqtt",
     "topic": "another/sensor",
     "property": "co2",
     "above": 1000
@@ -164,7 +179,7 @@ title: 'Automation: Триггеры'
 
 !!! Warning
 
-    Поля `equals`, `above`, `below`, `between`, `outside`, `changes` и `updates` не могут использоваться в одном триггере одновременно.
+    Поля `equals`, `differs`, `above`, `below`, `between`, `outside`, `changes` и `updates` не могут использоваться в одном триггере одновременно.
 
 ### `topic`
 
@@ -178,7 +193,7 @@ MQTT-топик.
 
 ### `...`
 
-Поля `equals`, `above`, `below`, `between`, `outside`, `changes`, `updates` и `force` работают так же, как в триггере [`property`](#property).
+Поля `equals`, `differs`, `above`, `below`, `between`, `outside`, `changes`, `updates` и `force` работают так же, как в триггере [`property`](#property).
 
 ## Триггер `telegram`
 
