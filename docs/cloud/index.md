@@ -21,7 +21,7 @@ _HOMEd Cloud_ это сервис, который позволяет "пробр
 
 1. [установить](/cloud/installation/) сервис _HOMEd Cloud_
 2. получить доступ при помощи Telegram-бота [HOMEd Cloud Bot](https://t.me/homedCloudBot)
-3. указать в файле [Конфигурации](/cloud/configuration/) токен, выданный ботом
+3. указать в файле [конфигурации](/cloud/configuration/) токен, выданный ботом
 4. добавить навык [HOMEd Cloud](https://dialogs.yandex.ru/store/skills/5e05d82c-homed) в приложении "Дом с Алисой" и авторизоваться, используя имя пользователя и пароль, выданные ботом
 
 ## Полезные ссылки
