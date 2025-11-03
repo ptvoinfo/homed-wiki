@@ -5,8 +5,7 @@ Deploy:
   stage: deploy
   script:
   - rm -rf ${DIR}/*
-  - cp -r docs ${DIR}
-  - cp mkdocs.yml ${DIR}
-  - python scripts/zigbee.py >> ${DIR}/docs/zigbee/devices.md
+  - python scripts/zigbee.py >> docs/zigbee/devices.md
+  - docker run --rm -u ${UID}:${UID} -v ${PWD}:/docs -v ${DIR}:/docs/site squidfunk/mkdocs-material build
   only:
     - master
